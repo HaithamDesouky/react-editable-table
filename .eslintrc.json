@@ -1,0 +1,88 @@
+{
+  "env": {
+    "es6": true,
+    "node": true,
+    "browser": true,
+    "jest": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:import/recommended",
+    "plugin:import/typescript",
+    "plugin:css-modules/recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:prettier/recommended",
+    "prettier"
+  ],
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 2020
+  },
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["jsx-a11y"],
+  "ignorePatterns": ["**/dummy-app", "**/instrumented", "**/test"],
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  },
+  "rules": {
+    "template-curly-spacing": "off",
+    "linebreak-style": ["error", "unix"],
+    "semi": ["error", "always"],
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": true
+      }
+    ],
+
+    "@typescript-eslint/no-non-null-assertion": 0,
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/no-var-requires": 0,
+    "@typescript-eslint/no-explicit-any": 1,
+    "import/no-named-as-default": 0,
+    "no-undef": 2,
+    "import/no-cycle": [2, { "maxDepth": 1 }],
+    "react/prop-types": 0,
+    "react/jsx-filename-extension": 0,
+    "react/no-did-mount-set-state": 0,
+    "react/display-name": 0,
+    "react/no-danger": 0,
+    "jsx-a11y/click-events-have-key-events": 1,
+    "jsx-a11y/no-static-element-interactions": 1,
+    "jsx-a11y/no-autofocus": 1,
+    "jsx-a11y/iframe-has-title": 1,
+    "jsx-a11y/media-has-caption": 0,
+    "jsx-a11y/anchor-is-valid": [
+      1,
+      {
+        "components": ["Link"],
+        "specialLink": ["hrefLeft", "hrefRight"],
+        "aspects": ["invalidHref", "preferButton"]
+      }
+    ],
+    "jsx-a11y/html-has-lang": 0,
+    "prefer-template": 2,
+    "eol-last": ["error", "always"],
+    "space-in-parens": ["error", "never"],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": 0,
+    "react/no-array-index-key": 0,
+    "css-modules/no-unused-class": [0, { "camelCase": true }],
+    "css-modules/no-undef-class": [0],
+    "import/extensions": ["off", "never"],
+    "react/no-unknown-property": [
+      "error",
+      { "ignore": ["ctrlid", "component", "object", "note"] }
+    ]
+  }
+}
