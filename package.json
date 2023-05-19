@@ -1,6 +1,10 @@
 {
   "name": "table-editor",
   "version": "0.1.0",
+    "main": "dist/index.js",
+    "publishConfig": {
+       "access": "restricted"
+    },
   "private": true,
   "dependencies": {
     "@mui/styled-engine-sc": "^5.12.0",
@@ -59,12 +63,8 @@
     "@storybook/react": "^7.0.9",
     "@storybook/react-webpack5": "^7.0.9",
     "@storybook/testing-library": "^0.0.14-next.2",
-    "babel-plugin-named-exports-order": "^0.0.2",
     "eslint": "^8.40.0",
-    "eslint-config-standard": "^17.0.0",
-    "eslint-plugin-import": "^2.27.5",
-    "eslint-plugin-n": "^15.7.0",
-    "eslint-plugin-promise": "^6.1.1",
+    "eslint-config-google": "^0.14.0",
     "eslint-plugin-react": "^7.32.2",
     "prop-types": "^15.8.1",
     "storybook": "^7.0.9",
