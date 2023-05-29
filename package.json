@@ -1,7 +1,7 @@
 {
-  "name": "@hd-dev/react-editable-table2",
+  "name": "@hd-dev/react-editable-table",
   "version": "1.0.0",
-  "description": "Editable table for use inReact projects",
+  "description": "Editable table for use in React projects",
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,7 +10,7 @@
     "build-storybook": "storybook build"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.22.1",
     "@babel/preset-env": "^7.22.2",
