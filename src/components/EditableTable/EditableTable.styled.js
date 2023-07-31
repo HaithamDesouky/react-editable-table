@@ -194,7 +194,7 @@ export const StyledTableActivationOverlay = styled(Box, {
 
 export const StyledTableSwitches = styled(Box, {
   shouldForwardProp: (prop) => !["enableSwitches"].includes(prop),
-})(({ theme, enableSwitches }) => {
+})(({ enableSwitches }) => {
   return {
     position: "absolute",
     zIndex: 5,
@@ -221,7 +221,7 @@ export const StyledTableSwitches = styled(Box, {
 
 export const StyledEditableOptionsBar = styled(Box, {
   shouldForwardProp: (prop) => !["enableOptionsBar"].includes(prop),
-})(({ theme, enableOptionsBar }) => {
+})(({ enableOptionsBar }) => {
   return {
     zIndex: 3,
     position: "relative",
@@ -246,7 +246,7 @@ export const StyledOptionsBarDivider = styled(Box)(() => ({
     visibility: "hidden",
   },
 }));
-export const StyledOptionsBarButton = styled("span")(({ theme }) => {
+export const StyledOptionsBarButton = styled("span")(() => {
   return {
     button: {
       padding: 12,
