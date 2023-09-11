@@ -137,7 +137,6 @@ Your Name - [Haitham Desouky](https://www.linkedin.com/in/haitham-desouky-b862b5
 
 Project Link: [https://github.com/HaithamDesouky/react-editable-table](https://github.com/HaithamDesouky/react-editable-table)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
