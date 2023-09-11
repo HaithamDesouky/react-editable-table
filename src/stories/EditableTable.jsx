@@ -22,10 +22,10 @@ export const EditableTableStories = () => {
     addColumn: "Add a nice column",
     deleteColumn: "Get rid of this column",
     openFullScreen: "Open table in full screen",
-    options: "MöglichkeitMöglichkeit",
+    options: "Options",
     deleteTable: "delete the entire thing",
-    columnHeader: "Col Header",
-    rowHeader: "Roww Header",
+    columnHeader: "Column Header",
+    rowHeader: "Row Header",
     openFullScreen: "I want see big",
   };
 
@@ -39,7 +39,7 @@ export const EditableTableStories = () => {
       onChange={onChange}
       translations={customTranslations}
       initialData={initialData}
-      clientPalette={palette}
+      //   clientPalette={palette}
     />
   );
 };
