@@ -78,7 +78,7 @@ This is an editable table built with React. Users can edit the content of a tabl
 
 Once installed the editable table is ready to use out of the box.
 
-<p align="center">To get the latest value of the table<p>
+<p align="left">To get the latest value of the table<p>
 
 The passing the onChange callback to the Editable Table allows you to access the latest value of the table.
 
@@ -87,9 +87,7 @@ const onChange = (tableValue) => {
 console.log({ tableValue });
 };
 
-    <EditableTable
-      onChange={onChange}
-    />
+    <EditableTable onChange={onChange}/>
 ```
 
 Once called, the parameter tableValue will give you the latest table values
