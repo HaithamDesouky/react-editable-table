@@ -5,14 +5,13 @@ export const EditableTableStories = () => {
   const onChange = (tableValue) => {
     console.log({ tableValue });
   };
-
   const initialData = {
     tableAnswerContent: [
-      ["", "feddsf", "", "dsfs"],
-      ["sssss", "", "fdsfds", "fdsf"],
+      ["", "value", "", "previous value"],
+      ["i filled this in before", "", "i think i did this already", "help"],
       ["", "", "", ""],
     ],
-    hasColumnHeader: false,
+    hasColumnHeader: true,
     hasRowHeader: true,
   };
 
