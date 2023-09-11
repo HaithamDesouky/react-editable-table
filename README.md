@@ -80,6 +80,7 @@ Once installed the editable table is ready to use out of the box.
 
 ### To get the latest value of the table
 
+
 The passing the onChange callback to the Editable Table allows you to access the latest value of the table.
 
 ```
