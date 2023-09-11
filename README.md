@@ -17,14 +17,14 @@
   <p align="center">
     An awesome README template to jumpstart your projects!
     <br />
-    <a href="https://www.linkedin.com/in/haitham-desouky-b862b545/><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/HaithamDesouky/react-editable-table"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://www.linkedin.com/in/haitham-desouky-b862b545/>View Demo</a>
+    <a href="https://github.com/HaithamDesouky/react-editable-table">View Demo</a>
     ·
-    <a href="https://www.linkedin.com/in/haitham-desouky-b862b545/issues">Report Bug</a>
+    <a href="https://github.com/HaithamDesouky/react-editable-table/issues">Report Bug</a>
     ·
-    <a href="https://www.linkedin.com/in/haitham-desouky-b862b545/issues">Request Feature</a>
+    <a href="https://github.com/HaithamDesouky/react-editable-table/issues">Request Feature</a>
   </p>
 </div>
 
@@ -144,7 +144,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 - [ ] Allow customization of colors by the user
       Many more things...
 
-See the [open issues](https://www.linkedin.com/in/haitham-desouky-b862b545/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/HaithamDesouky/react-editable-table/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -186,15 +186,15 @@ Project Link: [https://github.com/HaithamDesouky/react-editable-table](https://g
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 [contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://www.linkedin.com/in/haitham-desouky-b862b545/graphs/contributors
+[contributors-url]: https://github.com/HaithamDesouky/react-editable-table/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://www.linkedin.com/in/haitham-desouky-b862b545/network/members
+[forks-url]: https://github.com/HaithamDesouky/react-editable-table/network/members
 [stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://www.linkedin.com/in/haitham-desouky-b862b545/stargazers
+[stars-url]: https://github.com/HaithamDesouky/react-editable-table/stargazers
 [issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://www.linkedin.com/in/haitham-desouky-b862b545/issues
+[issues-url]: https://github.com/HaithamDesouky/react-editable-table/issues
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://www.linkedin.com/in/haitham-desouky-b862b545/blob/master/LICENSE.txt
+[license-url]: https://github.com/HaithamDesouky/react-editable-table/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/othneildrew
 [product-screenshot]: images/screenshot.png
