@@ -150,6 +150,9 @@ const initialData = {
 <EditableTable initialData={initialData}/>
 ```
 
+ <img src="images/initialdata.png" alt="snapshot" width="600" height="300">
+
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ROADMAP -->
