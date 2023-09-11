@@ -250,7 +250,7 @@ export const StyledOptionsBarButton = styled("span")(() => {
   return {
     button: {
       padding: 12,
-      width: 96,
+      minWidth: 96,
       fontSize: 16,
       fontWeight: 500,
       borderRadius: "unset",
@@ -261,7 +261,7 @@ export const StyledOptionsBarButton = styled("span")(() => {
       },
 
       span: {
-        marginRight: 10,
+        marginRight: 20,
       },
     },
   };
@@ -337,7 +337,6 @@ export const StyledEditableTableTD = styled(StyledTD, {
       return belongsToHeader ? theme.palette.primary.main : "#FFFFFF";
     };
 
-    console.log({ theme });
     return {
       position: "relative",
       padding: "0px",
@@ -347,7 +346,7 @@ export const StyledEditableTableTD = styled(StyledTD, {
       fontSize: 16,
       fontWeight: 500,
       background: getBackground(),
-      color: belongsToHeader && theme.palette.primary.light,
+      color: belongsToHeader && theme.palette.primary.contrastText,
       borderTop:
         colSep && !showColumnHeader && isFirstRow && !isInConfigState && border,
       borderBottom: border,

@@ -37,18 +37,29 @@ import {
   StyledTBody,
 } from "./EditableTable.styled";
 
-const theme = createTheme({
-  palette: {
+export const EditableTable = ({
+  clientPalette,
+  onChange,
+  translations,
+  initialData,
+}) => {
+  // 'inactive' 'config' 'editing'
+
+  const palette = {
     primary: { main: "#454545", light: "#CDCDCD" },
     secondary: { main: "#00A97F", light: "#5D5B6B" },
-  },
-});
+  };
 
-export const EditableTable = () => {
-  // 'inactive' 'config' 'editing'
+  const defaultTheme = createTheme({
+    palette: clientPalette || palette,
+  });
+
+  const theme = defaultTheme;
   const [tableEditState, setTableEditState] = useState("inactive");
   const [tableCellWidth, setTableCellWidth] = useState(null);
   const [tableFullScreen, setTableFullscreen] = useState(false);
+
+  console.log({ initialData });
   const [tableValue, setTableValue] = useState({
     tableAnswerContent: [],
     hasColumnHeader: true,
@@ -91,8 +102,17 @@ export const EditableTable = () => {
     const initialUserAnswer = Array(defaultRowsAmount).fill(
       Array(defaultColumnsAmount).fill("")
     );
+
+    if (initialData?.tableAnswerContent?.flat()?.length) {
+      setTableValue(initialData);
+      return;
+    }
     setTableValue({ ...tableValue, tableAnswerContent: initialUserAnswer });
   }, []);
+
+  useEffect(() => {
+    onChange(tableValue);
+  }, [tableValue]);
 
   const hasColumnHeaderChangeHandler = (value, tableData) => {
     const tableAnswerContent = tableData?.tableAnswerContent;
@@ -267,7 +287,7 @@ export const EditableTable = () => {
       <StyledTableCellRowButtonContainer
         id={`table-cell-row-button-container-${rowIndex}`}
       >
-        <Tooltip title="Add row" placement="left">
+        <Tooltip title={translations?.addRow || "Add row"} placement="left">
           <StyledRowActionButton
             type="addTop"
             color="neutral"
@@ -279,7 +299,10 @@ export const EditableTable = () => {
           </StyledRowActionButton>
         </Tooltip>
 
-        <Tooltip title="Delete row" placement="left">
+        <Tooltip
+          title={translations?.deleteRow || "Delete row"}
+          placement="left"
+        >
           <StyledRowActionButton
             onClick={() => handleDeleteRow(rowIndex)}
             type="delete"
@@ -291,7 +314,7 @@ export const EditableTable = () => {
           </StyledRowActionButton>
         </Tooltip>
 
-        <Tooltip title="Add row" placement="left">
+        <Tooltip title={translations?.addRow || "Add row"} placement="left">
           <StyledRowActionButton
             type="addBottom"
             color="neutral"
@@ -311,7 +334,10 @@ export const EditableTable = () => {
       <StyledTableCellColumnButtonContainer
         id={`table-cell-column-button-container-${cellIndex}`}
       >
-        <Tooltip title="Add column here" placement="top">
+        <Tooltip
+          title={translations?.addColumn || "Add column here"}
+          placement="top"
+        >
           <StyledColumnActionButton
             tabIndex={-1}
             size="xSmall"
@@ -323,7 +349,10 @@ export const EditableTable = () => {
           </StyledColumnActionButton>
         </Tooltip>
 
-        <Tooltip title="Delete column" placement="top">
+        <Tooltip
+          title={translations?.deleteColumn || "Delete column"}
+          placement="top"
+        >
           <StyledColumnActionButton
             tabIndex={-1}
             size="xSmall"
@@ -335,7 +364,10 @@ export const EditableTable = () => {
           </StyledColumnActionButton>
         </Tooltip>
 
-        <Tooltip title="Add column here" placement="top">
+        <Tooltip
+          title={translations?.addColumn || "Add column here"}
+          placement="top"
+        >
           <StyledColumnActionButton
             tabIndex={-1}
             size="xSmall"
@@ -451,7 +483,12 @@ export const EditableTable = () => {
                   tableEditState
                 )}
               >
-                <Tooltip title="Open table in full screen" placement="top">
+                <Tooltip
+                  title={
+                    translations?.openFullScreen || "Open table in full screen"
+                  }
+                  placement="top"
+                >
                   <IconButton onClick={handleFullScreenClick}>
                     <FullscreenIcon />
                   </IconButton>
@@ -462,13 +499,16 @@ export const EditableTable = () => {
                     onClick={() => setEnableSwitches((prevState) => !prevState)}
                   >
                     <Typography variant={"buttonSmall"} fontWeight={"regular"}>
-                      Options
+                      {translations?.options || "Options"}
                     </Typography>
-                    <ExpandMoreIcon />
+                    <ExpandMoreIcon sx={{ ml: 1 }} />
                   </IconButton>
                 </StyledOptionsBarButton>
                 <StyledOptionsBarDivider />
-                <Tooltip title="Delete table" placement="top">
+                <Tooltip
+                  title={translations?.deleteTable || "Delete Table"}
+                  placement="top"
+                >
                   <IconButton onClick={handleTableDelete}>
                     <DeleteIcon />
                   </IconButton>
@@ -476,7 +516,7 @@ export const EditableTable = () => {
                 <StyledTableSwitches enableSwitches={enableSwitches}>
                   <div>
                     <Typography variant={"body1"} fontWeight={"regular"}>
-                      Column Header
+                      {translations?.columnHeader || "Column Header"}
                     </Typography>
                     <p></p>
                     <Switch
@@ -493,7 +533,7 @@ export const EditableTable = () => {
                   </div>
                   <div>
                     <Typography variant={"body1"} fontWeight={"regular"}>
-                      Row Header
+                      {translations?.rowHeader || "Row Header"}
                     </Typography>
                     <Switch
                       checked={hasRowHeader}
@@ -616,7 +656,10 @@ export const EditableTable = () => {
 
             {tableEditState === "editing" &&
               currentColumnsAmount < maxTableColumns && (
-                <Tooltip title="Add column" placement="bottom">
+                <Tooltip
+                  title={translations?.addColumn || "Add column here"}
+                  placement="bottom"
+                >
                   <StyledAddNewColumnButton
                     variant="outlined"
                     color="primary"
@@ -630,7 +673,10 @@ export const EditableTable = () => {
 
             {tableEditState === "editing" &&
               currentRowsAmount < maxTableRows && (
-                <Tooltip title="Add row" placement="bottom">
+                <Tooltip
+                  title={translations?.addRow || "Add row"}
+                  placement="bottom"
+                >
                   <StyledAddNewRowButton
                     variant="outlined"
                     color="primary"
