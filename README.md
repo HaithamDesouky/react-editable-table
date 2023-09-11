@@ -58,15 +58,13 @@
 
 ## About The Project
 
- <img src="images/snapshot.png" alt="snapshot" width="200" height="200">
+ <img src="images/snapshot.png" alt="snapshot" width="600" height="600">
 
 This is an editable table built with React. Users can edit the content of a table, add rows, columns, delete content and headers for both rows and columns.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Built With
-
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
 - [![React][React.js]][React-url]
 
@@ -154,7 +152,7 @@ Project Link: [https://github.com/HaithamDesouky/react-editable-table](https://g
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
 [license-url]: https://github.com/HaithamDesouky/react-editable-table/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
+[linkedin-url]: https://www.linkedin.com/in/haitham-desouky-b862b545/
 [product-screenshot]: images/snapshot.png
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
