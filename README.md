@@ -147,7 +147,7 @@ const initialData = {
     hasRowHeader: true,
   };
 
-    <EditableTable initialData={initialData}/>
+<EditableTable initialData={initialData}/>
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
