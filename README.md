@@ -58,7 +58,7 @@
 
 ## About The Project
 
- <img src="images/snapshot.png" alt="snapshot" width="600" height="600">
+ <img src="images/snapshot.png" alt="snapshot" width="900" height="600">
 
 This is an editable table built with React. Users can edit the content of a table, add rows, columns, delete content and headers for both rows and columns.
 
