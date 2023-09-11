@@ -136,11 +136,11 @@ If you pass previously filled in data into the initialData prop, the table will 
 
 const initialData = {
     tableAnswerContent: [
-      ["", "feddsf", "", "dsfs"],
-      ["sssss", "", "fdsfds", "fdsf"],
+      ["", "value", "", "previous value"],
+      ["i filled this in before", "", "i think i did this already", "help"],
       ["", "", "", ""],
     ],
-    hasColumnHeader: false,
+    hasColumnHeader: true,
     hasRowHeader: true,
   };
 
@@ -148,7 +148,6 @@ const initialData = {
 ```
 
  <img src="images/initialdata.png" alt="snapshot" width="900" height="300">
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
