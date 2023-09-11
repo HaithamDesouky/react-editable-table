@@ -15,8 +15,6 @@
   <h3 align="center">React Editable Table</h3>
 
   <p align="center">
-    <a href="https://github.com/HaithamDesouky/react-editable-table"><strong>Explore the docs »</strong></a>
-    <br />
     <br />
     <a href="https://github.com/HaithamDesouky/react-editable-table">View Demo</a>
     ·
