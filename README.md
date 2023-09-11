@@ -15,8 +15,6 @@
   <h3 align="center">React Editable Table</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
-    <br />
     <a href="https://github.com/HaithamDesouky/react-editable-table"><strong>Explore the docs »</strong></a>
     <br />
     <br />
@@ -41,7 +39,6 @@
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
@@ -150,7 +147,7 @@ const initialData = {
 <EditableTable initialData={initialData}/>
 ```
 
- <img src="images/initialdata.png" alt="snapshot" width="600" height="300">
+ <img src="images/initialdata.png" alt="snapshot" width="900" height="300">
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
