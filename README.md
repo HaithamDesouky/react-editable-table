@@ -80,7 +80,6 @@ Once installed the editable table is ready to use out of the box.
 
 ### To get the latest value of the table
 
-
 The passing the onChange callback to the Editable Table allows you to access the latest value of the table.
 
 ```
@@ -92,6 +91,64 @@ console.log({ tableValue });
 ```
 
 Once called, the parameter tableValue will give you the latest table values
+
+### Custom translations
+
+You can pass custom translations for the Editable table buttons by providing the customTranslations prop with key value translations as such:
+
+Note: If no translations are passed, default values will be used instead.
+
+```
+
+const customTranslations = {
+    addRow: "Add row translation",
+    deleteRow: "Delete Row",
+    addColumn: "Add a nice column",
+    deleteColumn: "Get rid of this column",
+    openFullScreen: "Open table in full screen",
+    options: "Options",
+    deleteTable: "delete the entire thing",
+    columnHeader: "Column Header",
+    rowHeader: "Row Header",
+    openFullScreen: "I want see big",
+  };
+
+<EditableTable translations={customTranslations} />
+```
+
+### Customize color of the table
+
+Passing the clientPalette prop allows you to change the theme/colors of the editable table. For best result, make sure you add values for all properties as shown below.
+
+```
+
+const palette = {
+    primary: { main: "#4E3D42", light: "#6D6466", contrastText: "#E3DBDB" },
+    secondary: { main: "#6D6466", light: "#6D6466" },
+  };
+
+
+    <EditableTable clientPalette={palette}/>
+```
+
+### Loading previous values
+
+If you pass previously filled in data into the initialData prop, the table will be initialised with said data.
+
+```
+
+const initialData = {
+    tableAnswerContent: [
+      ["", "feddsf", "", "dsfs"],
+      ["sssss", "", "fdsfds", "fdsf"],
+      ["", "", "", ""],
+    ],
+    hasColumnHeader: false,
+    hasRowHeader: true,
+  };
+
+    <EditableTable initialData={initialData}/>
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
