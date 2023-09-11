@@ -87,7 +87,7 @@ const onChange = (tableValue) => {
 console.log({ tableValue });
 };
 
-    <EditableTable onChange={onChange}/>
+<EditableTable onChange={onChange}/>
 ```
 
 Once called, the parameter tableValue will give you the latest table values
@@ -107,10 +107,10 @@ const customTranslations = {
     deleteColumn: "Get rid of this column",
     openFullScreen: "Open table in full screen",
     options: "Options",
-    deleteTable: "delete the entire thing",
+    deleteTable: "Delete table",
     columnHeader: "Column Header",
     rowHeader: "Row Header",
-    openFullScreen: "I want see big",
+    openFullScreen: "full screen plz",
   };
 
 <EditableTable translations={customTranslations} />
@@ -128,7 +128,7 @@ const palette = {
   };
 
 
-    <EditableTable clientPalette={palette}/>
+<EditableTable clientPalette={palette}/>
 ```
 
 ### Loading previous values
