@@ -43,8 +43,6 @@ export const EditableTable = ({
   translations,
   initialData,
 }) => {
-  // 'inactive' 'config' 'editing'
-
   const palette = {
     primary: { main: "#454545", light: "#CDCDCD" },
     secondary: { main: "#00A97F", light: "#5D5B6B" },
@@ -59,7 +57,6 @@ export const EditableTable = ({
   const [tableCellWidth, setTableCellWidth] = useState(null);
   const [tableFullScreen, setTableFullscreen] = useState(false);
 
-  console.log({ initialData });
   const [tableValue, setTableValue] = useState({
     tableAnswerContent: [],
     hasColumnHeader: true,
@@ -111,7 +108,7 @@ export const EditableTable = ({
   }, []);
 
   useEffect(() => {
-    onChange(tableValue);
+    if (onChange) onChange(tableValue);
   }, [tableValue]);
 
   const hasColumnHeaderChangeHandler = (value, tableData) => {

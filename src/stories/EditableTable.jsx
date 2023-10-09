@@ -1,44 +1,72 @@
+import { Typography } from "@mui/material";
 import React from "react";
 import { EditableTable } from "../components/EditableTable/EditableTable.js";
 
-export const EditableTableStories = () => {
+export const EditableTableWithNoPreviousContent = () => {
+  return (
+    <>
+      <Typography align="center" variant="h6" sx={{ mt: 1 }}>
+        Initial table state
+      </Typography>
+      <EditableTable />
+    </>
+  );
+};
+
+export const EditableTableSavedContent = ({ initialData }) => {
+  return (
+    <>
+      <Typography align="center" variant="h6" sx={{ mt: 1 }}>
+        Table when initialData prop is provided with correct table data
+      </Typography>
+      <EditableTable initialData={initialData} />
+    </>
+  );
+};
+
+export const EditableTableColorPalette = ({ initialData, clientPalette }) => {
+  return (
+    <>
+      <Typography align="center" variant="h6" sx={{ mt: 1 }}>
+        Change the color palette in the controls to see the difference
+      </Typography>
+      <Typography align="center" sx={{ mt: 1 }}>
+        Note: The following formats are supported: #nnn, #nnnnnn, rgb(), rgba(),
+        hsl(), hsla(), color().
+      </Typography>
+      <EditableTable initialData={initialData} clientPalette={clientPalette} />
+    </>
+  );
+};
+
+export const EditableTableWithCustomTranslations = ({ translations }) => {
+  return (
+    <>
+      <Typography align="center" variant="h6" sx={{ mt: 1 }}>
+        Change the translations in the see the difference
+      </Typography>
+      <Typography align="center" sx={{ mt: 1 }}>
+        Note: the tooltips and menu include translations
+      </Typography>
+      <EditableTable translations={translations} />
+    </>
+  );
+};
+
+export const EditableTableWithOnChangeCallBack = ({ callback }) => {
   const onChange = (tableValue) => {
     console.log({ tableValue });
   };
-  const initialData = {
-    tableAnswerContent: [
-      ["", "value", "", "previous value"],
-      ["i filled this in before", "", "i think i did this already", "help"],
-      ["", "", "", ""],
-    ],
-    hasColumnHeader: true,
-    hasRowHeader: true,
-  };
-
-  const customTranslations = {
-    addRow: "Add row translation",
-    deleteRow: "Delete Row",
-    addColumn: "Add a nice column",
-    deleteColumn: "Get rid of this column",
-    openFullScreen: "Open table in full screen",
-    options: "Options",
-    deleteTable: "delete the entire thing",
-    columnHeader: "Column Header",
-    rowHeader: "Row Header",
-    openFullScreen: "I want see big",
-  };
-
-  const palette = {
-    primary: { main: "#4E3D42", light: "#6D6466", contrastText: "#E3DBDB" },
-    secondary: { main: "#6D6466", light: "#6D6466" },
-  };
 
   return (
-    <EditableTable
-      onChange={onChange}
-      translations={customTranslations}
-      initialData={initialData}
-      //   clientPalette={palette}
-    />
+    <>
+      <Typography align="center" variant="h6" sx={{ mt: 1 }}>
+        onChange call back provided
+      </Typography>
+      <Typography align="center" sx={{ mt: 1 }}>
+        Note: check your console for logs with the changes
+      </Typography>
+      <EditableTable onChange={onChange} />
+    </>
   );
 };
