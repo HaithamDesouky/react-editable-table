@@ -191,7 +191,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 ## Contact
 
-Your Name - [Haitham Desouky](https://www.linkedin.com/in/haitham-desouky-b862b545/) - haithamadesouky@gmail.com
+Your Name - [Haitham Desouky]([https://www.linkedin.com/in/haitham-desouky-b862b545/](https://www.linkedin.com/in/haitham-desouky-b862b545/)) - haithamadesouky@gmail.com
 
 Project Link: [https://github.com/HaithamDesouky/react-editable-table](https://github.com/HaithamDesouky/react-editable-table)
 
