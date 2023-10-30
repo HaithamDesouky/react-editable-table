@@ -16,7 +16,7 @@
 
   <p align="center">
     <br />
-    <a href="https://haithamdesouky.github.io/react-editable-table/?path=/story/example-editable-table--simple-editable-table">View Demo</a>
+    <a href="https://haithamdesouky.github.io/react-editable-table/">View Demo</a>
     ·
     <a href="https://github.com/HaithamDesouky/react-editable-table/issues">Report Bug</a>
     ·
