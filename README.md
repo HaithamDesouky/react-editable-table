@@ -1,9 +1,5 @@
 <a name="readme-top"></a>
 
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
@@ -16,7 +12,7 @@
 
   <p align="center">
     <br />
-    <a href="https://github.com/HaithamDesouky/react-editable-table">View Demo</a>
+    <a href="https://haithamdesouky.github.io/react-editable-table/">View Demo</a>
     ·
     <a href="https://github.com/HaithamDesouky/react-editable-table/issues">Report Bug</a>
     ·
@@ -191,7 +187,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 ## Contact
 
-Your Name - [Haitham Desouky](https://www.linkedin.com/in/haitham-desouky-b862b545/) - haithamadesouky@gmail.com
+Your Name - [Haitham Desouky]([https://www.linkedin.com/in/haitham-desouky-b862b545/](https://www.linkedin.com/in/haitham-desouky-b862b545/)) - haithamadesouky@gmail.com
 
 Project Link: [https://github.com/HaithamDesouky/react-editable-table](https://github.com/HaithamDesouky/react-editable-table)
 
