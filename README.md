@@ -63,11 +63,22 @@ This is an editable table built with React. Users can edit the content of a tabl
 
 ### Installation
 
+```
+npm i @hd-dev/react-editable-table
+```
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Usage
 
 Once installed the editable table is ready to use out of the box.
+
+```
+import { EditableTable } from "@hd-dev/react-editable-table"
+
+<EditableTable />
+
+```
 
 ### To get the latest value of the table
 
