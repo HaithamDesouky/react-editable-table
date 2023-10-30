@@ -6,7 +6,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
- <img src="images/editable.png" alt="Logo" width="80" height="80">
+ <img src="https://github.com/HaithamDesouky/react-editable-table/blob/master/images/editable.png" alt="Logo" width="80" height="80">
 
   <h3 align="center">React Editable Table</h3>
 
@@ -49,7 +49,7 @@
 
 ## About The Project
 
- <img src="images/snapshot.png" alt="snapshot" width="900" height="600">
+ <img src="https://github.com/HaithamDesouky/react-editable-table/blob/master/images/snapshot.png" alt="snapshot" width="900" height="600">
 
 This is an editable table built with React. Users can edit the content of a table, add rows, columns, delete content and headers for both rows and columns.
 
@@ -152,7 +152,7 @@ const initialData = {
 <EditableTable initialData={initialData}/>
 ```
 
- <img src="images/initialdata.png" alt="snapshot" width="900" height="300">
+ <img src="https://github.com/HaithamDesouky/react-editable-table/blob/master/images/initialdata.png" alt="snapshot" width="900" height="300">
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
